@@ -6,8 +6,6 @@
   position: absolute;
   left: 10%;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 30%;
   vertical-align: middle;
@@ -19,7 +17,6 @@
     font-size: 60px;
     color: white;
     font-weight: 400;
-    line-height: 50px;
     margin-top: 0;
     margin-bottom: 40px;
     position: relative;
