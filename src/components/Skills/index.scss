@@ -1,0 +1,132 @@
+.skills-page {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.text-zone {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 30%;
+  vertical-align: middle;
+  display: table-cell;
+  max-height: 90%;
+  z-index: 3;
+
+  h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: 400;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    position: relative;
+    display: block;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+  }
+}
+.services-section {
+  width: 50%;
+  padding: 30px;
+  background-color: transparent;
+  color: white;
+  display: grid;
+  gap: 20px;
+  position: absolute;
+  right: -1%;
+  height: 100%;
+  top: 0;
+  bottom: 15px;
+  margin: auto;
+  z-index: 2;
+}
+.service-item {
+  padding: 7px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.service-item:hover {
+  border: 1px solid #ffd700;
+  transform: translate(0, -4px);
+  transition: all ease-in-out 0.3s;
+}
+.service-item h3 {
+  font-size: 1.5em;
+}
+
+.service-item p {
+  font-size: 1.2em;
+}
+@media screen and (max-width: 1200px) {
+  .skills-page {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin-top: 70px;
+  }
+
+  .text-zone {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    top: 0;
+    transform: none;
+    padding: 20px;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  .services-section {
+    width: 90%;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 2;
+  }
+
+  .service-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .service-item:hover {
+    border: 1px solid #ffd700;
+    transform: translate(0, -4px);
+  }
+}
