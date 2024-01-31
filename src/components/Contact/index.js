@@ -19,11 +19,19 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const formData = new FormData(form.current);
+    const templateParams = {
+      from_name: formData.get("name"),
+      from_email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
+
     emailjs
-      .sendForm(
+      .send(
         "service_n9dd3qc",
         "template_y0x39ev",
-        form.current,
+        templateParams,
         "3Fe94ZCU3b6hfgTjU"
       )
       .then(
@@ -54,7 +62,7 @@ const Contact = () => {
             questions, don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} autoComplete="off">
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
